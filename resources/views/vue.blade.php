@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Laravel Homepage</title>
-
-   <!-- Fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <title>Vue</title>
 </head>
 <body>
   <header>
@@ -20,13 +16,8 @@
     </ul>
   </header>
   <hr>
-  <h1>{{ $helloWorld }}</h1>
-  <h2>My favourite Frameworks:</h2>
-  <ul>
-    @foreach ($frameworks as $framework)
-      <li>{{$framework}}</li>
-    @endforeach
-  </ul>
+  <h1>{{$vue}}</h1>
+  <a href="/">You seems lost, let's go home.</a>
   <hr>
   <footer>
     Copyright @ Boolean 88 gang

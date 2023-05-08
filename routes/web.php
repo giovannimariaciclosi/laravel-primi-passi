@@ -14,5 +14,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $helloWorld = "Hello World";
+
+    $frameworks = [
+        'Next.js',
+        'Laravel',
+        'Vue.js',
+        'React',
+        'Angular'
+    ];
+
+    return view('home', compact('helloWorld', 'frameworks'));
+});
+
+Route::get('/laravel', function () {
+    $laravel = "I'm Laravel";
+
+    return view('laravel', compact('laravel'));
+});
+
+Route::get('/vue', function () {
+    $vue = "I'm Vue.js";
+
+    return view('vue', compact('vue'));
+});
+
+Route::get('/next', function () {
+    $next = "I'm Next.js";
+
+    return view('next', compact('next'));
 });
