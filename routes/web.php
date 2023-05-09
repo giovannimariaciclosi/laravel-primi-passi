@@ -26,22 +26,22 @@ Route::get('/', function () {
     ];
 
     return view('home', compact('helloWorld', 'frameworks'));
-});
+})->name('home');
 
 Route::get('/laravel', function () {
     $laravel = "I'm Laravel";
 
     return view('laravel', compact('laravel'));
-});
+})->name('laravel');
 
 Route::get('/vue', function () {
     $vue = "I'm Vue.js";
 
     return view('vue', compact('vue'));
-});
+})->name('vue');
 
 Route::get('/next', function () {
     $next = "I'm Next.js";
 
     return view('next', compact('next'));
-});
+})->name('next');

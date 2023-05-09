@@ -13,10 +13,10 @@
 <body>
   <header>
     <ul style="display:flex; gap: 10px; list-style-type: none;">
-      <li><a href="/">Home</a></li>
-      <li><a href="/next">Next.js</a></li>
-      <li><a href="/vue">Vue.js</a></li>
-      <li><a href="/laravel">Laravel</a></li>
+      <li><a href="{{ route('home') }}">Home</a></li>
+      <li><a href="{{ route('next') }}">Next.js</a></li>
+      <li><a href="{{ route('vue') }}">Vue.js</a></li>
+      <li><a href="{{ route('laravel') }}">Laravel</a></li>
     </ul>
   </header>
   <hr>
